@@ -4,10 +4,7 @@ package by.zharikov.newsapp.models
 import com.google.gson.annotations.SerializedName
 
 data class NewsResponse(
-    @SerializedName("articles")
-    val articles: List<Article>? = null,
-    @SerializedName("status")
-    val status: String? = null,
-    @SerializedName("totalResults")
-    val totalResults: Int? = null
+    val articles: List<Article>,
+    val status: String,
+    val totalResults: Int
 )
